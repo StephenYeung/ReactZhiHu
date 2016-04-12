@@ -29,7 +29,7 @@ class Drawer extends Component{
           
       };
       _navigator = this.props.navigator;
-      drawer = this.props.drawer;
+      //drawer = this.props.drawer;
        //ToastAndroid.show(drawer ? '有dede' : '空的dede');
   }
   
@@ -53,7 +53,7 @@ class Drawer extends Component{
                 () => {
                  routes = _navigator.getCurrentRoutes();
                  if(routes[routes.length-1].name === 'MainStory'){
-                     drawer.closeDrawer();
+                     //drawer.closeDrawer();
                      _navigator.push({
                     description: other.description,
                     title: other.name,
